@@ -1,7 +1,7 @@
 # 0002: Initial map extraction boundary and geographic conventions
 
 **Date:** 18 November 2026  
-**Status:** Provisional, awaiting owner confirmation
+**Status:** Approved by project owner on 18 November 2026
 
 ## Context
 
