@@ -12,3 +12,7 @@
 - Retain source, retrieval date and licence metadata. Public OSM use requires attribution and ODbL compliance.
 - Update `docs/PROJECT_STATUS.md` and the current weekly report when milestone status changes.
 - Do not claim local browser verification unless the owner or a controlled browser test actually verifies it.
+
+- The project owner approved the initial map area and true 1:1 scale on 18 Nov 2026. The config now enables extraction; still pass `--confirm-boundary` explicitly.
+- For realistic environment work, follow `docs/BUILDING_REALISM_PLAN.md`: preserve OSM building/part tags, distinguish measured from estimated heights, investigate Environment Agency LiDAR DTM/DSM, and reserve bespoke Blender modelling for hero landmarks.
+- Do not describe OSM footprint extrusion as photorealistic. Verify geometry and source provenance first, then build the highest-quality realistic slice that meets browser performance targets.
