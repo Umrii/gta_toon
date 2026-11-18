@@ -1,8 +1,14 @@
 # TYNE CITY: working notes for Claude Code
 
-- The full specification is `TYNE_CITY_SPEC.md`. Section 15 sets the working rules and section 15.2 sets the report format.
-- The `CLAUDE.md` in the parent folder (`D:\Downloads`) is about an unrelated business plan. Ignore it for this project.
-- Stack: Vite + strict TypeScript + Three.js; tests use Vitest. Rapier is added in Phase 3, not before.
-- Always run `npm run build` and `npm test` after changes. Check the browser with the `dev` launch config (`.claude/launch.json`).
-- Keep tuning values in `src/app/config.ts`. Don't hard-code them in systems.
-- Update `docs/PROJECT_STATUS.md` and the current weekly report when a milestone moves.
+- Read `TYNE_CITY_SPEC.md` before changes.
+- Follow section 15 of the specification: small tasks, inspect before editing, explain assumptions, run build/tests, report actual validation, and do not claim tests that were not run.
+- Stack: Vite + strict TypeScript + Three.js; tests use Vitest. Rapier is deferred until the player/physics phase.
+- Keep tuning/configuration centralised. Avoid creating placeholder modules for distant phases.
+- Always run `npm run build` and `npm test` after TypeScript changes.
+- Python map tooling is under `scripts/map-pipeline/`; setup and commands are documented in that directory.
+- The proposed map area and CRS are documented in `docs/decisions/0002-initial-map-area.md`. It is provisional until the owner confirms.
+- OSM extraction requires an explicit `--confirm-boundary` flag and an approved config. Do not bypass this gate.
+- Do not run large repeated Overpass queries or commit raw downloads.
+- Retain source, retrieval date and licence metadata. Public OSM use requires attribution and ODbL compliance.
+- Update `docs/PROJECT_STATUS.md` and the current weekly report when milestone status changes.
+- Do not claim local browser verification unless the owner or a controlled browser test actually verifies it.
