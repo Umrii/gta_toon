@@ -1,0 +1,45 @@
+{
+  "name": "newcastle-core-v1",
+  "description": "Initial Newcastle city-centre extraction area for TYNE CITY.",
+  "source": "OpenStreetMap",
+  "source_license": "ODbL-1.0",
+  "retrieved_at": null,
+  "crs": "EPSG:4326",
+  "bbox": {
+    "west": -1.635,
+    "south": 54.965,
+    "east": -1.585,
+    "north": 54.995
+  },
+  "notes": [
+    "Initial core covers central Newcastle, Monument, Haymarket, Central Station and the Quayside/Tyne Bridge approach.",
+    "Gateshead-side expansion is not included in this initial extraction boundary.",
+    "The bounding box is an initial coarse extraction envelope; Phase 1 processing must clip features and report counts."
+  ],
+  "coordinate_system": {
+    "projected_crs": "EPSG:27700",
+    "local_origin": {
+      "easting": null,
+      "northing": null,
+      "selection_rule": "Derive from the project-approved map origin near Grey's Monument and store the resolved values in the generated manifest."
+    },
+    "threejs_axes": {
+      "x": "east",
+      "y": "elevation",
+      "z": "south"
+    },
+    "units": "metres"
+  },
+  "overpass": {
+    "timeout_seconds": 180,
+    "max_retries": 3,
+    "retry_backoff_seconds": 10
+  },
+  "features": {
+    "roads_network_type": "drive",
+    "buildings": true,
+    "parks": true,
+    "water": true,
+    "landmarks": true
+  }
+}
