@@ -6,15 +6,15 @@
 | Current phase | Phase 1: geographic extraction |
 | Current week | Week 02 (from 18 Nov 2026) |
 | Completed milestones | Sprint 1 foundation committed as `55cb361`; Phase 1 extraction scaffolding committed |
-| In progress | Owner confirmation of proposed map area; validate Python setup and extraction config |
-| Blockers | Overpass extraction intentionally gated pending owner approval |
+| In progress | Python environment setup and first OSM extraction |
+| Blockers | Python environment and actual OSM extraction still need local validation |
 | Known critical bugs | None reported |
 | Latest stable commit | See `git log` on `main` |
 | Latest playable demo URL | Local development: http://localhost:5173 (not publicly deployed) |
 | Total hours invested | Update from actual time tracking |
 | Next milestone | Extract and validate roads, buildings, parks, water and landmark data |
 
-## Current proposed map decision (not yet approved)
+## Approved initial map decision (18 November 2026)
 
 - Initial area: central Newcastle around Monument/Grey Street, Haymarket, Central Station, Quayside and the Tyne Bridge crossing/approach.
 - Wider Gateshead: deferred from the first pass; the bridge's south landing may fall inside the extraction envelope.
@@ -29,8 +29,8 @@ See `docs/decisions/0002-initial-map-area.md`.
 
 ## Owner checks
 
-- [ ] Confirm proposed map boundary and that wider Gateshead can wait.
-- [ ] Confirm real-world scale.
+- [x] Confirm proposed map boundary and defer wider Gateshead; include full Tyne Bridge crossing.
+- [x] Confirm real-world scale (1.0).
 - [ ] Run the app and personally test orbit controls.
 - [ ] Run `python scripts/map-pipeline/extract_osm.py --check-config`.
-- [ ] After approving the boundary, enable extraction in config and run with `--confirm-boundary`.
+- [ ] Run extraction with `python scripts/map-pipeline/extract_osm.py --confirm-boundary`.
