@@ -8,7 +8,7 @@ End:
 Phase 1: establish a reproducible, version-correct OpenStreetMap extraction pipeline for the proposed initial Newcastle core.
 
 ## Planned tasks
-- [ ] Owner confirms the provisional bbox, limited Tyne Bridge south landing, wider Gateshead deferral, and real-world scale.
+- [x] Owner approved the central Newcastle + Quayside + full Tyne Bridge crossing area; wider Gateshead deferred; real-world scale confirmed (18 Nov 2026).
 - [x] Add a configurable initial map boundary.
 - [x] Add Python extraction dependencies and reproducible setup instructions.
 - [x] Add an OSMnx 2.x extraction script for roads, buildings, parks, water and landmark candidates.
@@ -18,7 +18,7 @@ Phase 1: establish a reproducible, version-correct OpenStreetMap extraction pipe
 - [x] Ignore local virtual environments and generated map downloads/outputs.
 - [ ] Create Python virtual environment and install dependencies locally.
 - [ ] Run `--check-config` and confirm validation.
-- [ ] After approval, run extraction once against Overpass.
+- [ ] Run extraction once against Overpass using the approved config.
 - [ ] Validate GeoJSON/GeoPackage outputs, feature counts and geometry quality.
 - [ ] Inspect outputs for map coverage and obvious gaps.
 
@@ -31,9 +31,9 @@ Phase 1: establish a reproducible, version-correct OpenStreetMap extraction pipe
 - Script supports a no-network config check and blocks extraction until explicit owner approval.
 
 ## Incomplete tasks
-- No OSM network extraction has been run.
+- No OSM network extraction has been run yet; approval is now recorded.
 - No local Python environment or generated map files have been verified.
-- The proposed boundary and true-scale default still need owner confirmation.
+- The initial boundary and true-scale setting were approved on 18 November 2026.
 
 ## Tests and validation
 - Config/script review: source reviewed in GitHub.
