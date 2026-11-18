@@ -3,7 +3,7 @@
   "description": "Provisional initial Newcastle city-centre extraction area for TYNE CITY.",
   "source": "OpenStreetMap",
   "source_license": "ODbL-1.0",
-  "owner_approved_for_extraction": false,
+  "owner_approved_for_extraction": true,
   "bbox": {
     "west": -1.635,
     "south": 54.965,
@@ -11,9 +11,9 @@
     "north": 54.995
   },
   "notes": [
-    "Provisional core includes central Newcastle around Monument, Grey Street, Haymarket and Central Station, plus Quayside and the Tyne Bridge approach.",
-    "The bounding box includes the Tyne Bridge crossing and may include a limited area around its Gateshead landing; it is not an attempt to model wider Gateshead in this first pass.",
-    "The boundary must be confirmed by the project owner before network extraction."
+    "Owner-approved first extraction boundary: central Newcastle around Monument, Grey Street, Haymarket and Central Station, plus Quayside and the full Tyne Bridge crossing/approach.",
+    "Wider Gateshead district is deferred to a later expansion; the bridge's south landing is included.",
+    "Use real-world metric scale (1.0)."
   ],
   "coordinate_system": {
     "source_crs": "EPSG:4326",
@@ -31,7 +31,7 @@
       "z": "south"
     },
     "units": "metres",
-    "scale": 1.0
+    "scale": 1
   },
   "overpass": {
     "timeout_seconds": 180,
@@ -44,5 +44,6 @@
     "parks": true,
     "water": true,
     "landmarks": true
-  }
+  },
+  "owner_approval_recorded_at": "2026-11-18"
 }
